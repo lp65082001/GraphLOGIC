@@ -1,2 +1,2 @@
 # OI_gnn
-Implementation osteogenesis imperfecta of for structural-informed lethality prediction
+Implementation osteogenesis imperfecta of model for structural-informed lethality prediction
