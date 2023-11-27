@@ -3,7 +3,7 @@
 import warnings
 #from Bio import BiopythonDeprecationWarning
 #warnings.filterwarnings("ignore", category=BiopythonDeprecationWarning)
-
+warnings.filterwarnings('ignore')
 #from cam import SingleGCN_CAM_res, SingleGCN_CAM_gp, df_device
 from dataset import dataset_sel
 import torch
@@ -12,9 +12,9 @@ from torch import nn
 #from visualization import Plotter
 from model import GAT_n_tot_only,GAT_n_tot
 from torch_geometric.loader import DataLoader
-from sklearn.metrics import confusion_matrix,auc
-'''
-# parameter setting (control)#
+from sklearn.metrics import confusion_matrix
+
+# parameter setting (shuffle)#
 result_type = "shuffle"
 result_dataset = "test" #(or total)
 dataset_name =  "bert4_total_real"
@@ -29,7 +29,7 @@ dataset_name =  "bert4_ref_real"
 save_dir = './bert4_control/'
 model_arch = "GAT_n_tot_only"
 t = "a1" # a1 only
-
+'''
 # define function #
 def ecoding_amino_analysis(w,x,y,z):
     amino_table = np.array(["Ala","Cys","Asp","Glu","Arg","Ser","Val","Trp","Pro"])
@@ -127,8 +127,14 @@ if __name__ == '__main__':
             pred = out.argmax(dim=1)
             g_true = (data.y).argmax(dim=1)
             pred_label = pred==g_true
-    #print(pred_label)
-
+            tn, fp, fn, tp = confusion_matrix(g_true, pred).ravel()
+    print(confusion_matrix(g_true, pred))
+    print(f"accuracy: {(tp+tn)/(tp+fn+tn+fp)}")
+    print(f"recall: {tp/(tp+fn)}")
+    print(f"precision: {tp/(tp+fp)}")
+    print(f"specificity: {tn/(fp+tn)}")
+    print(f"f1-score: {2/(1/(tp/(tp+fn))+1/(tp/(tp+fp)))}")
+    print("= = = = = = ")
     alpha1_amino_label_lc = np.array([0,0,0,0,0,0,0,0,0])
     alpha1_amino_label_nlc = np.array([0,0,0,0,0,0,0,0,0])
     alpha1_amino_label_lnc = np.array([0,0,0,0,0,0,0,0,0])
@@ -213,7 +219,7 @@ if __name__ == '__main__':
     print(texdata,end="")
     print("\\end{tabular}\n\\end{center}\n\\end{document}")
 
-print("\n\n\n\n")
-test_index = np.where(total_data_list[:,3]=="1.0")[0]
+#print("\n\n\n\n")
+#test_index = np.where(total_data_list[:,3]=="1.0")[0]
 
-print(confusion_matrix(total_data_list[test_index,2].astype('int'),ref_model(total_data_list[test_index,0].astype("int"),total_data_list[test_index,1])))
+#print(confusion_matrix(total_data_list[test_index,2].astype('int'),ref_model(total_data_list[test_index,0].astype("int"),total_data_list[test_index,1])))
