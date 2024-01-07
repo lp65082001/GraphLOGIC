@@ -2,6 +2,7 @@ import gc
 import os
 import torch
 import random
+import warnings
 import numpy as np
 from torch import nn
 from dataset import dataset_sel
@@ -11,13 +12,13 @@ from sklearn.metrics import confusion_matrix
 from torch_geometric.loader import DataLoader
 from model import GAT_n_tot,GAT_n_tot_only
 from sklearn.model_selection import StratifiedKFold
-
+warnings.filterwarnings('ignore')
 df_device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-
+'''
 # hyperparameter setting (shuffle setting)#
 
 dataset_name = "bert4_total_real"
-save_path = "./bert4_shuffle/"
+save_path = "./bert4_final_d15/"
 dropedge_ = True
 graph_layer = "GAT_n_tot"
 nlayer = 1
@@ -25,24 +26,25 @@ split_seed = 3
 edge_drop_ratio = 0.5
 epoch_ = 500
 lr_= 0.001
-tolerance_=5
+tolerance_=50
 min_delta_=0.2
 
 '''
 # hyperparameter setting (control setting)#
 
 dataset_name = "bert4_ref_real"
-save_path = "./bert4_control/"
+save_path = "./bert4_final_d07/"
 dropedge_ = True
 graph_layer = "GAT_n_tot_only"
 nlayer = 1
 split_seed = 9
 edge_drop_ratio = 0.5
 epoch_ = 500
-lr_= 0.0005
-tolerance_=20
+lr_= 0.0009
+tolerance_=50
 min_delta_=0.1
-'''
+
+# t:50, m:0.2
 
 # define function #
 
@@ -148,7 +150,6 @@ for train_index, valid_index in kf.split(train_dataset,total_ll): # run with rat
         num_kfold +=1
         continue
 
-    torch.manual_seed(12345) #Repeatability
 
     train_loader = DataLoader(train_dataset[train_index], batch_size=16, shuffle=True) #data loader
     valid_loader = DataLoader(train_dataset[valid_index], batch_size=32, shuffle=False)
