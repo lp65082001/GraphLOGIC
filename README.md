@@ -5,7 +5,7 @@
 
 ## Introduction
 
-The OI_gnn project is  implementation osteogenesis imperfecta of model for structural-informed lethality prediction in publishion "Developing clinical lethality predictive model of Osteogenesis Imperfecta by using graph neural network".
+The OI_gnn project is  implementation osteogenesis imperfecta of model for structural-informed lethality prediction. The code is published with "Developing clinical lethality predictive model of Osteogenesis Imperfecta by using graph neural network".
 
 On the other hand, others checkpoint and structure data were available in https://doi.org/10.6084/m9.figshare.24633969
 
