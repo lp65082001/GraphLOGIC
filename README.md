@@ -11,12 +11,22 @@ On the other hand, others checkpoint and structure data were available in https:
 
 ## Environment
 
+1. **Hardware**
 The model is training on the hardware Cpu:r5 3600 only with pytorch and pytorch_geometric framework.
+
+2. **Package**
+All of the script are run on python, you can conda to create visual environment and install it:
+‘’‘
+pip install -r requirements.txt  
+’‘’
 
 ## Prediction
 
-You can easy to run predicter.py to get result:
-
+You can easy to run predicter.py to get result with position and mutation type:
+‘’‘
+python predicter.py -pos 20 -mut ser
+’‘’
+and the result:
 
 ## Citing
 
