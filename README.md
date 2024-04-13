@@ -21,7 +21,7 @@ You can easy to run predicter.py to get result with position and mutation type:
 python predictor.py -p 247 -m Ser -c a1
 ```
 and the result:
-![image info](./figure/image.png)
+![image info](./figure/demo.png)
 
 ## Citing
 
