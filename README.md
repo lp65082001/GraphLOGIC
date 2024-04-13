@@ -1,7 +1,7 @@
 ## Introduction
 GraphLOGIC: Graph-based Lethality predictor for OsteoGenesis Imperfecta for Collagen is implementation osteogenesis imperfecta of model for structural-informed lethality prediction. The code is published with "Developing clinical lethality predictive model of Osteogenesis Imperfecta by using graph neural network".
 
-On the other hand, others checkpoint and structure data were available in https://doi.org/10.6084/m9.figshare.24633969
+On the other hand, others checkpoint and structure data were available in https://doi.org/10.6084/m9.figshare.24633969, please download checkpoint into folder.
 
 ## Environment
 
@@ -18,9 +18,10 @@ pip install -r requirements.txt
 
 You can easy to run predicter.py to get result with position and mutation type:
 ```
-python predicter.py -pos 20 -mut ser
+python predictor.py -p 247 -m Ser -c a1
 ```
 and the result:
+![image info](./figure/image.png)
 
 ## Citing
 

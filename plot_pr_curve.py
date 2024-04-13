@@ -82,7 +82,7 @@ def max_f1(precision,recall):
 if __name__ == '__main__':
 
     #prediction("bert4_total_real_8", './bert4_test_total8/')
-    prediction("bert4_total_real", './bert4_shuffle/')
+    prediction("bert4_total_real", './bert4_final_d15/')
     
     with open("./bert4_total_real.pt", "rb") as fp:   # Unpickling
         contact_12 = pickle.load(fp)
@@ -111,9 +111,9 @@ if __name__ == '__main__':
     a1_12_f1_max,a1_12_f1_max_index, a1_12_aupr = max_f1(precision_pr_12_a1, recall_pr_12_a1)
     a2_12_f1_max,a2_12_f1_max_index, a2_12_aupr = max_f1(precision_pr_12_a2, recall_pr_12_a2)
 
-    ax.plot(recall_pr_12_a1, precision_pr_12_a1, lw=1, color='slateblue', linestyle='solid', label=f"ɑ1 (shuffle),AUPR:{a1_12_aupr:.2}")
-    ax.plot(recall_pr_12_a2, precision_pr_12_a2, lw=1, color='slateblue', linestyle='dashed', label=f"ɑ2 (shuffle),AUPR:{a2_12_aupr:.2}")
-    plt.legend(loc='lower left',edgecolor="black")
+    ax.plot(recall_pr_12_a1, precision_pr_12_a1, lw=1, color='slateblue', linestyle='solid', label=f"ɑ1 (GraphLOGIC),AUPR:{a1_12_aupr:.2}")
+    ax.plot(recall_pr_12_a2, precision_pr_12_a2, lw=1, color='slateblue', linestyle='dashed', label=f"ɑ2 (GraphLOGIC),AUPR:{a2_12_aupr:.2}")
+    plt.legend(loc='lower left',edgecolor="black",fontsize=8)
 
     plt.xlabel('recall',fontsize=12)
     plt.ylabel('precision',fontsize=12)
