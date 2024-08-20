@@ -5,15 +5,16 @@ On the other hand, others checkpoint and structure data were available in https:
 
 ## Environment
 
-1. **Hardware**
+1. **Hardware:**
 The model is training on the hardware Cpu:r5 3600 only with pytorch and pytorch_geometric framework.
 
-2. **Package**
+2. **Package:**
 All of the script are running on python, you can use conda to create visual environment and install it:
 ```
 pip install -r requirements.txt  
 ```
-3. **testing**
+
+3. **testing:**
 Firstly, clone the code and download the checkpoint into the folder.
 ```
 - bert4_final_d07 (a1 model)
@@ -27,7 +28,7 @@ Firstly, clone the code and download the checkpoint into the folder.
 - ref-2015 (the result of xiao.2015)
 - reference_structure (the structure use to build graph)
 ```
-Secondly, the testing script need to run  ###detial_information.py:
+Secondly, the testing script need to run detial_information.py:
 ```
 # parameter setting (d15)#
 result_type = "shuffle"
