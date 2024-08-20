@@ -14,7 +14,7 @@ from model import GAT_n_tot_only,GAT_n_tot
 from torch_geometric.loader import DataLoader
 from sklearn.metrics import confusion_matrix
 
-# parameter setting (shuffle)#
+# parameter setting (d15)#
 result_type = "shuffle"
 result_dataset = "test" #(or total)
 dataset_name =  "bert4_total_real"
@@ -22,7 +22,7 @@ save_dir = './bert4_shuffle/'
 model_arch = "GAT_n_tot"
 t = "a2" # (a1 or a2)
 '''
-# parameter setting (control)#
+# parameter setting (d07)#
 result_type = "control"
 result_dataset = "test" #(or total)
 dataset_name =  "bert4_ref_real"
