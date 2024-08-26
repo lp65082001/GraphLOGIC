@@ -9,7 +9,7 @@ On the other hand, others checkpoint and structure data were available in https:
 The model is training on the hardware Cpu:r5 3600 only with pytorch and pytorch_geometric framework.
 
 2. **Package:**
-All of the script are running on python, you can use conda to create visual environment and install it:
+All of the script are running on python, you can use conda to create visual environment in python=3.10 and install it:
 ```
 pip install -r requirements.txt  
 ```

@@ -1,4 +1,4 @@
-name: pyG
+name: GraphLOGIC
 channels:
   - conda-forge
   - bioconda
@@ -39,7 +39,6 @@ dependencies:
       - prettytable==3.7.0
       - psutil==5.9.5
       - pyparsing==3.0.9
-      - pysam==0.21.0
       - python-dateutil==2.8.2
       - pytz==2023.3
       - requests==2.31.0
@@ -60,4 +59,4 @@ dependencies:
       - tzdata==2023.3
       - urllib3==2.0.2
       - wcwidth==0.2.6
-prefix: /Users/hui/miniconda3/envs/pyG
+prefix: /Users/hui/miniconda3/envs/GraphLOGIC

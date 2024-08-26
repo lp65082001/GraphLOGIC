@@ -17,7 +17,6 @@ Pillow==9.5.0
 prettytable==3.7.0
 psutil==5.9.5
 pyparsing==3.0.9
-pysam==0.21.0
 python-dateutil==2.8.2
 pytz==2023.3
 requests==2.31.0
@@ -26,11 +25,8 @@ scipy==1.10.1
 seaborn==0.12.2
 six==1.16.0
 threadpoolctl==3.1.0
-torch==1.13.0
-torch-cluster @ git+https://github.com/rusty1s/pytorch_cluster.git@32bee6460cb2398a4e5f1e76c622817147658931
+torch==1.13.1
 torch-geometric==2.3.1
-torch-scatter @ git+https://github.com/rusty1s/pytorch_scatter.git@dbf42c4017446c18b46b810078aaabb6355cf675
-torch-sparse @ git+https://github.com/rusty1s/pytorch_sparse.git@578e6e0300c47fd4741918a4b059428168686d36
 torchaudio==0.13.1
 torchvision==0.14.1
 tqdm==4.65.0
