@@ -15,7 +15,7 @@ from model import  GAT_n_tot
 from torch_geometric.loader import DataLoader
 
 plt.rcParams['figure.figsize']=(4,4)
-save_dir = './bert4_shuffle/'
+save_dir = './bert4_final_d15/'
 
 if __name__ == '__main__':
 

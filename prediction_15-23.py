@@ -28,7 +28,7 @@ def ecoding_amino_analysis(w,x,y,z):
     return int(amino_ec), int(x), int(b), c 
 
 
-save_dir = './bert4_shuffle/'
+save_dir = './bert4_final_d15/'
 t = "a1"
 
 if __name__ == '__main__':

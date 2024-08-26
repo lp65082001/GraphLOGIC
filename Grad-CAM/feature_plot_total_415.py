@@ -4,7 +4,7 @@ from scipy.interpolate import make_interp_spline
 
 plt.rcParams["figure.dpi"] = 300
 plt.rcParams["savefig.dpi"] = 300
-plt.rcParams["figure.figsize"] = (5,4)
+plt.rcParams["figure.figsize"] = (7,3)
 
 def smooth(x):
     X_Y_Spline = make_interp_spline(range(27), x)
@@ -25,20 +25,20 @@ real_posl = np.array(["G12","P11","P10","G9","P8","P7","G6","P5","P4","G3","P2",
  ['211' 'Ser' '1' '1.0']
  ['211' 'Ala' '1' '1.0']]
 '''
-a1_1 = (np.load(f"{save_dir}/cam_data/cam.{55}.tbert4-resid.npy")).astype('float')
-a1_2 = (np.load(f"{save_dir}/cam_data/cam.{56}.tbert4-resid.npy")).astype('float')
-a1_3 = (np.load(f"{save_dir}/cam_data/cam.{57}.tbert4-resid.npy")).astype('float')
-a1_4 = (np.load(f"{save_dir}/cam_data/cam.{225}.tbert4-resid.npy")).astype('float')
+a1_1 = (np.load(f"{save_dir}/cam_data/cam.{99}.tbert4-resid.npy")).astype('float')
+a1_2 = (np.load(f"{save_dir}/cam_data/cam.{100}.tbert4-resid.npy")).astype('float')
+a1_3 = (np.load(f"{save_dir}/cam_data/cam.{101}.tbert4-resid.npy")).astype('float')
+a1_4 = (np.load(f"{save_dir}/cam_data/cam.{246}.tbert4-resid.npy")).astype('float')
 
 
-plt.plot(a1_1[0,0:27,0],"o-",markersize=1.5,linewidth=1,label="Arg-lethal")
-plt.plot(a1_2[0,0:27,0],"v-",markersize=1.5,linewidth=1,label="Cys-Nonlethal")
-plt.plot(a1_3[0,0:27,0],"^-",markersize=1.5,linewidth=1,label="Ser-Nonlethal")
-plt.plot(a1_4[0,0:27,0],"*-",markersize=1.5,linewidth=1,label="Ala-Nonlethal")
+plt.plot(a1_1[0,0:27,0],"o-",markersize=1.5,linewidth=1,label="Cys-Nonlethal")
+plt.plot(a1_2[0,0:27,0],"v-",markersize=1.5,linewidth=1,label="Ser-Nonlethal")
+plt.plot(a1_3[0,0:27,0],"^-",markersize=1.5,linewidth=1,label="Asp-Lethal")
+plt.plot(a1_4[0,0:27,0],"*-",markersize=1.5,linewidth=1,label="Ala-Lethal")
 
 plt.legend(edgecolor="black",fontsize=12)
 plt.xticks(range(27),real_posl ,fontsize=12,rotation=90)
 plt.ylabel("Grad-CAM",fontsize=12)
 plt.tight_layout()
-plt.savefig(f"../figure/total_221.png",dpi=300,bbox_inches="tight")
+plt.savefig(f"../figure/total_415.png",dpi=300,bbox_inches="tight")
 plt.close()

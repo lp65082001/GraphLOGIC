@@ -13,9 +13,14 @@ All of the script are running on python, you can use conda to create visual envi
 ```
 pip install -r requirements.txt  
 ```
+or use conda create env
+```
+conda env create -f environment.yml
+conda activate pyG 
+```
 
 3. **testing:**
-Firstly, clone the code and download the checkpoint into the folder.
+Firstly, clone the code and download the checkpoint (bert4_final_d07/bert4_final_d15) into the folder.
 ```
 - bert4_final_d07 (a1 model)
 - bert4_final_d15 (a1 & a2 model)
@@ -34,7 +39,7 @@ Secondly, the testing script need to run detial_information.py:
 result_type = "shuffle"
 result_dataset = "test" #(or total)
 dataset_name =  "bert4_total_real"
-save_dir = './bert4_shuffle/'
+save_dir = './bert4_final_d15/'
 model_arch = "GAT_n_tot"
 t = "a2" # (a1 or a2)
 
@@ -42,7 +47,7 @@ t = "a2" # (a1 or a2)
 result_type = "control"
 result_dataset = "test" #(or total)
 dataset_name =  "bert4_ref_real"
-save_dir = './bert4_control/'
+save_dir = './bert4_final_d07/'
 model_arch = "GAT_n_tot_only"
 t = "a1" # a1 only
 ```
@@ -53,7 +58,15 @@ Thirdly, the plot script:
 - ploy_prediction_15_23.py
 - plt_tsne.py
 ```
-
+the Grad-CAM figure are in folder Grad-CAM
+```
+- feature_plot_ref2015_heatmap.py
+- feature_plot_total211_heatmap.py
+- feature_plot_total415_heatmap.py
+- feature_plot_Arg_heatmap.py
+- feature_plot_Ser_heatmap.py
+- feature_plot_total.py
+```
 
 
 ## Prediction

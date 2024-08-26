@@ -18,7 +18,7 @@ from sklearn.metrics import confusion_matrix
 result_type = "shuffle"
 result_dataset = "test" #(or total)
 dataset_name =  "bert4_total_real"
-save_dir = './bert4_shuffle/'
+save_dir = './bert4_final_d15/'
 model_arch = "GAT_n_tot"
 t = "a2" # (a1 or a2)
 '''
@@ -26,7 +26,7 @@ t = "a2" # (a1 or a2)
 result_type = "control"
 result_dataset = "test" #(or total)
 dataset_name =  "bert4_ref_real"
-save_dir = './bert4_control/'
+save_dir = './bert4_final_d07/'
 model_arch = "GAT_n_tot_only"
 t = "a1" # a1 only
 '''

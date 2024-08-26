@@ -7,7 +7,7 @@ plt.rcParams["savefig.dpi"] = 300
 plt.rcParams["figure.figsize"] = (3,2)
 real_posl = np.array(["G12","P11","P10","G9","P8","P7","G6","P5","P4","G3","P2","P1","G0(mut)","P1'","P2'","G3'","P4'","P5'","G6'","P7'","P8'","G9'","P10'","P11'","G12'","P13'","P14'"])
 
-save_dir = '../bert4_shuffle/'
+save_dir = '../bert4_final_d15/'
 t='a1'
 
 
