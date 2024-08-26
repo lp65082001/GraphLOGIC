@@ -31,7 +31,7 @@ def check_pos(pos,old_pos):
     return old_pos+shift
 type_dict = {"P":0,"G":1,"A":1,"C":1,"S":1,"T":1,"H":2,"K":2,"R":2,"E":2,"D":2,"V":3,"I":3,"L":3,"M":3,"F":3,"Y":3,"W":3,"N":4,"Q":4}
 real_posl = np.array([1,2,4,5,7,8,10,11,13,14,16,17,19,20,22,23,25,26])
-save_dir = '../bert4_shuffle'
+save_dir = '../bert4_final_d15'
 
 total_data_train_alpha1 = np.load("../dataset/alpha1_train.npy")
 total_data_train_alpha1 = np.hstack((total_data_train_alpha1,np.ones((total_data_train_alpha1.shape[0],1))))
