@@ -27,6 +27,7 @@ pillow @ file:///home/conda/feedstock_root/build_artifacts/pillow_1719903554938/
 psutil @ file:///home/conda/feedstock_root/build_artifacts/psutil_1719274586160/work
 pycparser @ file:///home/conda/feedstock_root/build_artifacts/pycparser_1711811537435/work
 pyparsing @ file:///home/conda/feedstock_root/build_artifacts/pyparsing_1724616129934/work
+pysam==0.22.1
 PySide6==6.7.2
 PySocks @ file:///home/conda/feedstock_root/build_artifacts/pysocks_1661604839144/work
 python-dateutil @ file:///home/conda/feedstock_root/build_artifacts/python-dateutil_1709299778482/work
@@ -38,7 +39,7 @@ shiboken6==6.7.2
 six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
 sympy @ file:///home/conda/feedstock_root/build_artifacts/sympy_1723500264960/work
 threadpoolctl @ file:///home/conda/feedstock_root/build_artifacts/threadpoolctl_1714400101435/work
-torch==2.0.1
+torch @ file:///home/conda/feedstock_root/build_artifacts/pytorch-recipe_1699068498265/work
 torch-geometric @ file:///usr/share/miniconda/envs/test/conda-bld/pyg_1690989316471/work
 tornado @ file:///home/conda/feedstock_root/build_artifacts/tornado_1717722848697/work
 tqdm @ file:///home/conda/feedstock_root/build_artifacts/tqdm_1722737464726/work
