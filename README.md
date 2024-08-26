@@ -33,7 +33,7 @@ Firstly, clone the code and download the checkpoint (bert4_final_d07/bert4_final
 - ref-2015 (the result of xiao.2015)
 - reference_structure (the structure use to build graph)
 ```
-Secondly, the testing script need to run detial_information.py:
+Secondly, the testing script need to run detail_information.py:
 ```
 # parameter setting (d15)#
 result_type = "shuffle"
@@ -55,8 +55,8 @@ Thirdly, the plot script:
 ```
 - ploy_cv.py
 - plot_pr_curve.py
-- ploy_prediction_15_23.py
-- plt_tsne.py
+- plot_prediction_15_23.py
+- plot_tsne.py
 ```
 the Grad-CAM figure are in folder Grad-CAM
 ```
