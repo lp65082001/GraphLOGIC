@@ -15,7 +15,7 @@ pip install -r requirements.txt
 ```
 or use conda create env
 ```
-conda env create -f environment.yml
+conda create -n GraphLOGIC pandas "numpy<2" matplotlib pytorch pyg=2.3.1 -c conda-forge -c pytorch -c pyg
 conda activate pyG 
 ```
 

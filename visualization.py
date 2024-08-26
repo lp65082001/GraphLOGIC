@@ -5,7 +5,6 @@ import matplotlib.pyplot as plt
 import matplotlib.lines as mlines
 import numpy as np
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
-import seaborn as sns
 from matplotlib.ticker import FormatStrFormatter
 #sns.set_theme()
 
