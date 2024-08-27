@@ -61,9 +61,9 @@ t = "a1"
 
 Run the scripts for plotting.
 ```
-python ploy_cv.py
+python plot_cv.py
 python plot_pr_curve.py
-python plot_prediction_15_23.py
+python plot_prediction_15-23.py
 python plot_tsne.py
 ```
 Figures are saved in the `figures` directory.
@@ -87,7 +87,7 @@ python feature_plot_total_211.py
 python feature_plot_total_415.py
 python feature_plot_total_Arg_heatmap.py
 python feature_plot_total_Ser_heatmap.py
-python feature_plot_total_total.py
+python feature_plot_total.py
 ```
 
 ## Making Predictions
