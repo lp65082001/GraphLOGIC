@@ -102,3 +102,14 @@ Predict result: Lethal
 ```
 
 ## Citing
+```
+@article{hui2025graphlogic,
+  title={GraphLOGIC: Lethality prediction of osteogenesis imperfecta on type I collagen by a mechanics-informed graph neural network},
+  author={Hui, Wei-Han and Chen, Yen-Lin and Chang, Shu-Wei},
+  journal={International Journal of Biological Macromolecules},
+  volume={291},
+  pages={139001},
+  year={2025},
+  publisher={Elsevier}
+}
+```
